@@ -24,4 +24,14 @@ function kmToMiles(km){
     const miles = km * 0.621371
     return miles
 }
-console.log(kmToMiles(6))
+// console.log(kmToMiles(6))
+// leap year get
+
+function leapYear(year) {
+    if(year % 4 === 0){
+        return `<p>This year is leap year</p>`
+    } else {
+        return `<p>This year is not leap year</p>`
+    }
+}
+console.log(leapYear(2012))
