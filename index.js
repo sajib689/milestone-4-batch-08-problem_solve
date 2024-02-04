@@ -28,7 +28,7 @@ function kmToMiles(km){
 // leap year get
 
 function leapYear(year) {
-    if(year % 4 === 0){
+    if(year % 100 !== 0 && year % 4 === 0){
         return `<p>${year} year is leap year</p>`
     } else {
         return `<p>${year} This year is not leap year</p>`
