@@ -97,4 +97,35 @@ let b = 7
 const temp= a
 a = b
 b = temp
-console.log(a, b)
+// console.log(a, b)
+
+function temToCelisus (temp) {
+    const celsius = (temp) * 9/5
+    const celsiusConvert = celsius + 32
+    return celsiusConvert
+}
+// console.log(temToCelisus(40))
+let simpleNumbers = [5, 6, 11, 12, 98, 5]
+
+function findTheSameNumbers (num) {
+    const arr = []
+    for(const number of simpleNumbers) {
+        if (arr.includes(number) === false) {
+            arr.push(number)
+        }
+        return arr
+    }
+}
+// console.log(findTheSameNumbers(simpleNumbers))
+let vowels = ['a', 'a','a','a','a','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+function findTheVowels (v) {
+    let totalVowelLength = 0
+    for( const vowel of vowels) {
+        if((['a', 'e', 'o', 'u']).includes(vowel)) {
+            totalVowelLength += vowel.length
+        }
+    }
+    return totalVowelLength
+}
+console.log(findTheVowels(vowels))
