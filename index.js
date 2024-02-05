@@ -35,3 +35,57 @@ function leapYear(year) {
     }
 }
 // console.log(leapYear(2043))
+
+// get the average odd numbers 
+
+
+function getAverageNumber(numbers) {
+    const odds = []
+    for ( const number of numbers) {
+        if(number % 2 === 1) {
+            odds.push(number)
+        }
+    }
+    // all odds numbers
+    let sum = 0
+    for ( const number of odds ) {
+        sum = sum + number
+    }
+    const count = odds.length
+    const avg = sum / count
+    return avg
+}
+
+let numbers = [ 44, 50, 47, 20, 30, 100, 13, 41, 144, 145, 400, 93]
+const avg = getAverageNumber(numbers)
+// console.log(avg);
+// get even numbers averaging
+
+function getEvenNumber(num) {
+    for( const number of numbers ) {
+        if( number % 2 === 0 ) {
+            console.log( number)
+        }
+    }
+}
+let num = [ 44, 50, 47, 20, 30, 100, 13, 41, 144, 145, 400, 93]
+for (var i = 0; i < 5; i++) {
+    setTimeout(function () {
+    //  console.log(i);
+  }, 100);
+}  
+// get the duplicate elements
+
+
+function noDuplicate (array) {
+    const unique = []
+    for (const biryanikhorus of biryanikhor) {
+        if(unique.includes(biryanikhorus) === false) {
+            unique.push(biryanikhorus)
+        }
+        return unique
+    }
+}
+const biryanikhor =[ 'abul', 'babul', 'cabul', 'abul', 'babul', 'cabul']
+
+console.log(noDuplicate(biryanikhor))
