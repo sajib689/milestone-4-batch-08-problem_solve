@@ -88,4 +88,13 @@ function noDuplicate (array) {
 }
 const biryanikhor =[ 'abul', 'babul', 'cabul', 'abul', 'babul', 'cabul']
 
-console.log(noDuplicate(biryanikhor))
+// console.log(noDuplicate(biryanikhor))
+const today = new Date()
+const date = new Date('2062-10-09')
+// console.log(date.getFullYear())
+let a = 5
+let b = 7
+const temp= a
+a = b
+b = temp
+console.log(a, b)
